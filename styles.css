@@ -1,0 +1,192 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    display: flex;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 400px;
+    background: #2C3E50;
+    color: white;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Card Header */
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2C3E50;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+button {
+    background: #3498DB;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #2980B9;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer Row Styling */
+th[colspan="6"] {
+    text-align: right;
+    background-color: #e6e6e6;
+}
+
+th[colspan="2"] {
+    font-size: 18px;
+    color: #2980b9;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+        overflow-x: auto;
+        display: block;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* Print Styling */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .printable, .printable * {
+        visibility: visible;
+    }
+
+    .printable {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+    }
+
+    td {
+        background-color: #fafafa;
+    }
+}

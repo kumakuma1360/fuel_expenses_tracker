@@ -1,0 +1,4 @@
+[05-29-2025 00:41:57] Updated budget to PHP 10,000,000.00
+[05-29-2025 00:42:44] Added expense: USAR1 (cva0000) - Petron, Unleaded, ₱54 x 5 L (₱270), Destination: Malaybalay City - Impasugong
+[05-29-2025 00:43:10] Added expense: USAR2 (cva0000) - Caltex, Premium, ₱56 x 5 L (₱280), Destination: Malaybalay City - manila
+[05-29-2025 00:43:46] Added expense: Ambulance (dfsadf) - Caltex, Diesel, ₱34 x 2 L (₱68), Destination: Malaybalay City - Wanno
